@@ -1,7 +1,7 @@
 <?php
-    require_once "cabecalho.php";
+    require_once "../cabecalho.php";
 ?>
-<form action="exer1resp.php" method="post">
+<form action="exer2resp.php" method="post">
     <div class="row">
         <div class="col">
             <label for="valor1" class="form-label">Informe o valor</label>
@@ -14,4 +14,4 @@
         </div>
     </div>
 <?php
-    require_once "rodape.php";
+    require_once "../rodape.php";

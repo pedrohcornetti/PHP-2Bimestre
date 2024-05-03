@@ -78,6 +78,22 @@
         $cm = $valor1 * 100;
         return "$valor1 m em centímeros, equivale a : $cm cm";
     }
+    //exercício 8
+    function qtdeLatas($area){
+        $tinta = ($area / 3);
+        $lata = ceil($tinta/18); //ceil - arredonda para cima
+        $total = ($lata * 80); 
 
+        return "A quantidade de lata(s) de tinta necessária(s) são: $lata<br>Preço total: R$ ".number_format($total, 2, ',', '.');
+    }
+    //exercício 9
+    function idade($ano, $ano_atual){
+        $qtdanos = $ano_atual - $ano;
+        $qtdias = $qtdanos * 365;
+        $idade = 2025 - $ano;
+
+        return "Você já viveu $qtdanos anos <br> Você já viveu $qtdias dias <br> Em 2025, você terá $idade anos.";
+    }
+    
 ?>
      

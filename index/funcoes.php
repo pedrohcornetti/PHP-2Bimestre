@@ -94,6 +94,24 @@
 
         return "Você já viveu $qtdanos anos <br> Você já viveu $qtdias dias <br> Em 2025, você terá $idade anos.";
     }
+    //exercício 10
+    function imc($peso, $altura){
+        $imc = $peso / ($altura**2);
+        $imc_formatado = number_format($imc, 2, '.', '');
+        
+        if ($imc > 24.9){
+            return "Seu IMC é $imc, acima do peso ideal. :/ <a href='https://www.tuasaude.com/imc/'> Leia mais aqui! </a>";
+        }
+    
+        elseif($imc < 18.6){
+            return "Seu IMC é $imc, abaixo do peso ideal. :/ <a href='https://www.tuasaude.com/imc/'> Leia mais aqui! </a>";
+    
+        }
+        
+        else{
+            return "Seu IMC é $imc, portanto está no peso ideal. :) <a href='https://www.tuasaude.com/imc/'> Leia mais aqui! </a>";
+        }
+    }
     
 ?>
      

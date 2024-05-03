@@ -56,6 +56,22 @@
             echo "$valor1 x $i = $tabuada <br>";
         }
     }
-    
+    //exercício 5
+    function fatorial($valor1){
+        $fatorial = 1;
+        for ($i = $valor1; $i > 0; $i--) {
+            $fatorial = $fatorial * $i;
+        } 
+        return $fatorial;
+    }
+    //exercício 6
+    function valorCresceten($valorA, $valorB){
+        if($valorA > $valorB)
+            return "Valores em ordem crescente: $valorB - $valorA";
+        elseif($valorB > $valorA)
+            return "Valores em ordem crescente: $valorA - $valorB";
+        else
+            return "Números iguais: $valorA";
+    }
 ?>
      

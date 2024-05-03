@@ -73,5 +73,11 @@
         else
             return "Números iguais: $valorA";
     }
+    //exercício 7
+    function converterMetros($valor1){
+        $cm = $valor1 * 100;
+        return "$valor1 m em centímeros, equivale a : $cm cm";
+    }
+
 ?>
      

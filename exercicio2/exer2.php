@@ -4,9 +4,14 @@
 <form action="exer2resp.php" method="post">
     <div class="row">
         <div class="col">
-            <label for="valor1" class="form-label">Informe o valor</label>
-            <input type="number" name="valor1" id="valor1" class="form-control">
-        </div>
+        <?php
+        for ($i = 1; $i <= 7; $i++) {
+            echo "<div>";
+            echo "<label for='numero$i'>Número $i:</label>";
+            echo "<input type='number' id='numero$i' name='numero$i' required>";
+            echo "</div><br>";
+        }
+        ?>
     </div>
     <div class="row">
         <div class="col">

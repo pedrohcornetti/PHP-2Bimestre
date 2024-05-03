@@ -30,11 +30,13 @@
         }
     }
 
-    function triploSoma($valor1, $valor2){
-        if($valor1 == $valor2){
-            return ($valor1 + $valor2) * 3;
-        }else{
-            return $valor1 + $valor2;
-        }
-    }   
-    
+    function encontrarMenorEPosicao($numeros) {
+        // Encontra o menor valor no array
+        $menorValor = min($numeros);
+
+        // Encontra a posição do menor valor no array
+        $posicaoMenorValor = array_search($menorValor, $numeros) + 1; // +1 para ajustar para base 1
+
+        return array('menor' => $menorValor, 'posicao' => $posicaoMenorValor);
+    }
+?>

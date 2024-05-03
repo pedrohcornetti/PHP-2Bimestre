@@ -1,5 +1,5 @@
 <?php
-    require_once "../cabecalho.php";
+    require_once "../index/cabecalho.php";
 ?>
 <form action="exer3resp.php" method="post">
     <div class="row">
@@ -18,4 +18,4 @@
         </div>
     </div>
 <?php
-    require_once "../rodape.php";
+    require_once "../index/rodape.php";

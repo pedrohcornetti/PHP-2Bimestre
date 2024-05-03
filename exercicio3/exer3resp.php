@@ -1,9 +1,16 @@
 <?php
 
-    require_once "../cabecalho.php";
+    require_once "../index/cabecalho.php";
 
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $valor1 = isset($_POST['valor1']) ? (int)$_POST['valor1'] : 0;
+        $valor2 = isset($_POST['valor2']) ? (int)$_POST['valor2'] : 0;
 
-    echo "<p> Resposta: ".positivoNegativo($_POST["valor1"])."</p>";
+    // Chamada da função
+    $resultado = calcularSomaEspecial($valor1, $valor2);
 
+    // Exibe o resultado
+    echo "Resultado: $resultado";
+    }
 
-    require_once "../rodape.php";
+    require_once "../index/rodape.php";

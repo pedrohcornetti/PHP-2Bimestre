@@ -39,4 +39,14 @@
 
         return array('menor' => $menorValor, 'posicao' => $posicaoMenorValor);
     }
+
+    function calcularSomaEspecial($valor1, $valor2) {
+        $soma = $valor1 + $valor2;
+        
+        if ($valor1 == $valor2) {
+            return $soma * 3;
+        } else {
+            return $soma;
+        }
+    }
 ?>
